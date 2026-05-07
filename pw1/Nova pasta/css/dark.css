@@ -81,3 +81,19 @@ font-size: 20px;
 border: none;
 cursor:pointer;
 }
+
+.voltar{
+ position:absolute;
+left: 15px;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor:pointer;
+background: var(--cor-footer);
+color: var(--cor-branco);
+font-size: 14px;
+background: none;
+font-size: 20px;
+border: none;
+cursor:pointer;
+}
