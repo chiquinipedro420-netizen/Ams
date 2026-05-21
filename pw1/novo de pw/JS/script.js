@@ -22,16 +22,16 @@ const updateButtonIcon = () => {
     botao.title = darkMode ? "Mudar para modo claro" : "Mudar para modo escuro";
 };
 
-const TemaAtual = localStorage.getItem("tema") === "dark" ? "dark" : "light";
-if(TemaAtual === "dark") {
+const temaAtual = localStorage.getItem("tema") === "dark" ? "dark" : "light";
+if (temaAtual === "dark") {
     document.body.classList.add("dark");
 }
 
 updateButtonIcon();
 
 if (botao) {
-    botao.addEventListener("click", () => { document.body.classList.toggle("dark");
-
+    botao.addEventListener("click", () => { 
+            document.body.classList.toggle("dark"); 
         if(document.body.classList.contains("dark")) {
             localStorage.setItem("tema", "dark");
         } else {
