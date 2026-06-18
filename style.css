@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+:root{
+--cor-fundo:#003459;
+--cor-texto:#fff;
+--cor-hover:rgb(45, 65, 78);
+--font-size:24px;
+--cor-h1:#007EA7;
+--font-w: var('Monteserrat')
+}
+
+h1{
+    background-color: #00A7E1;
+    font: var(--font-w);
+    font-size: 56px;
+    text-decoration-color: #fff;
+
+}
+
+.card{
+    box-shadow: black;
+    box-sizing: border-box;
+
+ animation: sumir 1s ease forwards;
+ 
+
+ }
+  @keyframes sumir{
+  from {
+    opacity: 0;
+    transform:translateX(20%);
+
+ }
+      to {
+    opacity: 1;
+    transform: translateY(0%); 
+  }
+
+ 
+  }
+
+
+.card2{
+    box-shadow: white;
+    box-sizing: border-box;
+}
+ 
+p{
+    font: var(--font-w);
+    font-size: var(--font-size);
+}
+
+.faq{
+    font-size: 20px;
+    position: relative;
+    margin-left: 350px;
+    width:100%;
+
+
+
+ animation: aparecer 1s ease forwards;
+ 
+
+ }
+  @keyframes aparecer{
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+
+ }
+      to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+
+ 
+  }
+
+
+
+
+
+
+
+ 
+    
+
+
