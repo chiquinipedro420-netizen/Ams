@@ -1,0 +1,174 @@
+a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+
+
+
+nav{
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(33, 68, 33);
+  padding: 10px;
+  letter-spacing: 8px;
+   justify-content: space-around;
+   display:flex;opacity: 0;   /* não apagar para não quebrar os keyframes*/
+ 
+  animation: aparecer 1s ease forwards;
+
+  opacity: 0;   /* não apagar para não quebrar os keyframes*/
+ 
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer { /*keyframes ou quadros chaves são importantes para as animações do site*/
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+main{
+
+background: url("../images/fundo.jpeg") #0e001d no-repeat center center;
+background-size: cover;
+height: 952px;
+}
+
+nav{
+
+display: flex;  
+}
+
+nav li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+
+
+
+
+
+@media (max-width:999px){
+    body{
+        overflow-x: hidden;
+    }
+
+nav{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: rgb(33, 68, 33);
+    
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.3s ease-in;
+       
+}
+ }
+
+ nav li{
+    margin-left: 0;
+    opacity: 1;
+
+
+ }
+
+ 
+  
+footer{
+      position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #1e681b;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 56px;
+}
+
+h1{  /*titulo ta meio bagunçado*/
+
+  font-size: 56px;
+font-family: var(--font-w);
+
+margin-left: 550px;
+--cor-texto:#000000;
+
+  margin: 0;
+  padding: 15px;
+  background: #1e681b;
+  color: white;
+  border-bottom: 30px solid #0f3d10;
+  text-align: center;
+  
+
+
+
+ opacity: 0;   /* não apagar para não quebrar os keyframes*/
+ 
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer { /*keyframes ou quadros chaves são importantes para as animações do site*/
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+h2{  /* subtitulo*/
+ 
+margin-left:550px ;
+--cor-texto:#000000;
+font-family: var(--font-w);
+font-size: 56px;
+
+
+
+opacity: 0;
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}

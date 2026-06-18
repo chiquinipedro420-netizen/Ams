@@ -1,0 +1,205 @@
+
+        
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root{
+    --cor-fundo:#56698C;
+    --cor-principal:#172834;
+    --cor-hover:#888686;
+    --cor-texto:#fff;
+    --font-w: 'Montearrat';
+}
+
+    body{
+         background-color: #56698C;
+}
+
+  a{
+        color: var(--cor-texto);
+}
+
+    a:hover{
+        color:var(--cor-texto);
+    }
+
+  li{
+    color: var(--cor-texto);
+}
+
+  li:hover{
+  color: var(--cor-hover);
+}
+
+   header{
+    color: var(--cor-principal);    
+}
+  h3{
+    color: var(--cor-texto);
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:var(--cor-fundo);
+    font-family:var(--font-w);
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color:var(--cor-principal);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    color:var(--cor-texto);
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+/* LINKS */
+
+/* .nav-links{ */
+    /* display:flex; */
+    /* gap:20px; */
+    /* list-style:none; */
+/* } */
+
+/* .nav-links a{ */
+    /* color:var(--cor-texto); */
+    /* text-decoration:none; */
+    /* transition:0.3s; */
+/* } */
+
+/* .nav-links a:hover{ */
+    /* color:var(--cor-hover); */
+/* } */
+
+/* BOTÃO HAMBURGUER */
+
+/* .menu-toggle{ */
+    /* display:none; */
+    /* background:none; */
+    /* border:none; */
+    /* color:white; */
+    /* font-size:2rem; */
+    /* cursor:pointer; */
+/* } */
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:0;
+        background-color:var(--cor-principal);
+        width:100%;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+        
+
+        }
+        
+
+        
+    }
+h1{  /*titulo ta meio bagunçado*/
+
+  font-size: 56px;
+font-family: var(--font-w);
+
+margin-left: 550px;
+  --cor-texto:#fff;;
+
+  margin: 0;
+  padding: 15px;
+  background:var(--cor-principal);
+  color: white;
+  border-bottom: 30px solid var(--cor-fundo);
+  text-align: center;
+  
+
+
+
+ opacity: 0;   /* não apagar para não quebrar os keyframes*/
+ 
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer { /*keyframes ou quadros chaves são importantes para as animações do site*/
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+h2{
+  font-family: var(--font-w);
+
+margin-left: 550px;
+  --cor-texto:#fff;;
+
+  margin: 0;
+  padding: 15px;
+  background:var(--cor-principal);
+  color: white;
+  border-bottom: 30px solid var(--cor-fundo);
+  text-align: center;
+  
+
+
+
+ opacity: 0;   /* não apagar para não quebrar os keyframes*/
+ 
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer { /*keyframes ou quadros chaves são importantes para as animações do site*/
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+}
+
